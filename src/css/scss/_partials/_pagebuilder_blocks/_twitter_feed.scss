@@ -1,0 +1,14 @@
+.twitter-feed{
+  padding:60px 0;
+  background-color:$grey-light;
+  .container-narrow{
+    @media screen and (max-width: $break-phone-max){
+      max-width:90vw;
+    }
+  }
+  h2{
+    font-size:60px;
+    line-height:1.2;
+    margin-bottom:40px;
+  }
+}

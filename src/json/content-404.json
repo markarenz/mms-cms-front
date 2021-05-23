@@ -1,0 +1,7 @@
+{
+  "title": "404: Content Not Found",
+  "metadesc": "",
+  "slug": "404",
+  "status": 1,
+  "content": "[{ \"type\": \"page-header-orange\", \"id\": \"\", \"title\": \"\", \"class\": \"\", \"headline\": \"Four Oh Four\", \"subhead\": \"Content Not Found\", \"photo\": \"mms-page-headers-03.jpg\"},{ \"type\": \"1-col-dark\", \"id\": \"text-1\", \"title\": \"Text 1\", \"class\": \"\", \"html\": \"<h2>The content you are looking for cannot be found here.</h2><h3>Using the back button is probably your best bet.</h3>\"}, { \"type\": \"cta-1\", \"id\": \"cta-1\", \"title\": \"CTA 1\", \"class\": \"\", \"headline\": \"Do Not Miss Out\", \"subhead\": \"Keep up to date with the latest project updates and industry news.\", \"photo\": \"cta-bg.jpg\", \"buttonLabel\": \"Learn More\", \"buttonLink\": \"/blog\"}]"
+}

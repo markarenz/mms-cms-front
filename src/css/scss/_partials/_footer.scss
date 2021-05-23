@@ -1,0 +1,67 @@
+footer{
+  background-color:$grey-darkest;
+  color:white;
+  text-align:center;
+  padding:0;
+  position:relative;
+  font-size:20px;
+  line-height:1.5;
+  .col-md-4.item-2{
+    @media screen and (max-width:$break-phone-max){
+      margin:30px 0;
+    }
+  }
+  h2{
+    font-size:40px;
+  }
+  a{
+    color:white;
+    &:hover{
+      color:$orange;
+      text-decoration:none;
+    }
+    img{
+      display:inline-block;
+      transition:all .3s ease-out;
+      transform:scale(1);
+      &:hover{
+        transform:scale(1.1);
+      }
+    }
+  }
+  .copyright{
+    background-color:$grey-darker;
+    padding:10px 0;
+    color:white;
+  }
+  .top-spikes{
+    position:absolute;
+    width:100%;
+    height:50px;
+    top:-50px;
+    left:0;
+    background-image:url(/img/spike-dark.svg);
+    background-repeat:repeat-x;
+    background-size:20px 20px;
+    background-position:bottom center;
+    .svg-path{
+      fill:$grey-darkest;
+    }
+  }
+}
+#footer-contact{
+  input[type="submit"]{
+    cursor:pointer;
+    background-color:$grey;
+    color:$grey-darkest;
+    max-width:150px;
+    margin:10px auto;
+    transition:all .3s ease-out;
+    transform:scale(1);
+    &:hover{
+      background-color:$orange;
+      color:white;
+      transform:scale(1.1);
+    }
+  }
+}

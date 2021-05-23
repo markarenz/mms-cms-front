@@ -1,0 +1,33 @@
+
+$primary-font-stack: Raleway, Helvetica, Arial, sans;
+$headline-font-stack: "Roboto Slab", Helvetica, Arial, sans;
+
+$grey:#bbb;
+$grey-light:#ddd;
+$grey-dark:#555;
+$grey-darker:#333;
+$grey-darkest:#222;
+$near-white: #f8fafc;
+
+$red:#e3342f;
+$red-light:lighten( $red, 10% );
+$red-dark:darken( $red, 20% );
+
+$green:#38c172;
+$green-light:lighten( $green, 10% );
+$green-dark:darken( $green, 20% );
+
+$blue:#5d91f6;
+$blue-light:lighten( $blue, 10% );
+$blue-dark:darken( $blue, 20% );
+
+$orange:#f35a17;
+$orange-transparent:#f35a1766;
+$orange-light:lighten( $orange, 10% );
+$orange-dark:darken( $orange, 10% );
+
+/* Break Points */
+$break-desktop-min:1000px;
+$break-tablet-max:999px;
+$break-tablet-min:768px;
+$break-phone-max:767px;

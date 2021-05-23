@@ -1,0 +1,29 @@
+.btn{
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.btn-outline-white{
+  background-color:transparent;
+  border:1px solid white;
+  color:white;
+  padding:8px 12px;
+  transform:scale(1);
+  transition:all .5s ease-out;
+  &:hover{
+    background:white;
+    color:$grey-darkest;
+    transform:scale(1.1);
+  }
+}
+.btn-outline-orange{
+  border:1px solid $orange;
+  color:$orange;
+  padding:8px 12px;
+  transform:scale(1);
+  transition:all .5s ease-out;
+  &:hover{
+    background:$orange;
+    color:white;
+    transform:scale(1.1);
+  }
+}

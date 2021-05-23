@@ -1,0 +1,104 @@
+html, body{
+  overflow-x:hidden;
+  font-family: $primary-font-stack;
+  font-size:18px;
+  line-height:1.5;
+  background-color:$near-white;
+}
+
+h1,h2,h3{
+  font-family:$headline-font-stack;
+}
+img.responsive{
+  width:100%;
+  height:auto;
+  max-width:100%;
+}
+.container{
+  max-width:1000px;
+  margin:0 auto;
+}
+
+.opacity-0{
+  opacity:0;
+}
+.hidden{
+  display:none;
+}
+
+.container-narrow{
+  max-width:600px;
+  margin:0 auto;
+}
+
+.endcap-orange{
+  position:relative;
+  svg{
+    position:absolute;
+    top:0;left:0;
+    width:100%;
+    polygon{
+      fill:$orange;
+    }
+  }
+}
+
+small{
+  font-size:12px;
+  line-height: 1.1;
+}
+
+.code{
+  font-family: "Courier New", Courier, monospace;
+}
+.text-large{
+  font-size:30px;
+  line-height:1.2;
+}
+.font-headline{
+  font-family:$headline-font-stack;
+}
+main{
+  a{
+    color:$orange;
+    &:hover{
+      color:$orange;
+    }
+  }
+}
+hr.orange-dashed{
+  border-top:2px dashed $orange;
+  max-width:600px;
+}
+
+.btn{
+  transition:all .3s ease-out;
+  transform:scale(1);
+  border:none;
+  &:hover{
+    transform:scale(1.1);
+  }
+}
+.btn.btn-primary{
+  background-color:$orange;
+  color:white;
+  &:hover{
+    background-color:$orange-dark;
+    color:white;
+  }
+}
+.btn.btn-secondary{
+  background-color:$grey-darker;
+  color:white;
+  &:hover{
+    background-color:$grey-darkest;
+    color:white;
+  }
+}
+.code-sample{
+  padding:20px;
+  background:#444;
+  color:#eee;
+  font-size:12px;
+  font-family:Courier, monospace
+}
