@@ -6,6 +6,8 @@ const _ = require('lodash')
 // const posts = require('../json/mms-posts--production.json')
 
 const PostDetail = (props)=>{
+  const [modalActive, setModalActive] = React.useState(false);
+  const [modalImg, setModalImg] = React.useState('');
   let helmetDisp='';
   const { slug } = useParams();
   const post = _.find(props.posts, {slug})
@@ -18,6 +20,19 @@ const PostDetail = (props)=>{
     subhead: '',
   }
   const contentDisp = post.content.split("\r\n").join("<br />").split("\n\n").join("<br /><br />")
+  const handleMainContentClick = (e) => {
+    if (e.target.classList["0"] === "modal-responsive") {
+      const src = e.target.src;
+      setModalImg(src);
+      setModalActive(true);
+    }
+  }
+  const dismissModal = () => {
+    setModalImg('');
+    setModalActive(false);
+  }
+  const modalContent = (modalImg) ? <img alt="Lightbox" src={modalImg} onClick={dismissModal}/> : null
+  const lightBoxClass = (modalActive) ? "active" : null
   helmetDisp = (post.title) ?
     <HelmetComp
       title={post.title}
@@ -32,9 +47,18 @@ const PostDetail = (props)=>{
       <PageHeader block={block}/>
       <article id="post-content">
         <div className="row container-narrow">
-          <div className="col-md-12" dangerouslySetInnerHTML={{__html: contentDisp }} />
+          <div
+            className="col-md-12"
+            dangerouslySetInnerHTML={{__html: contentDisp }}
+            onClick={handleMainContentClick}
+          />
         </div>
       </article>
+      <div id="lightbox" className={lightBoxClass}>
+          <div className="stage" onClick={dismissModal}>
+            {modalContent}
+          </div>
+        </div>
     </div>
   )
 }
