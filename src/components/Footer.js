@@ -15,7 +15,7 @@ const Footer= (props)=>{
           <a href="https://twitter.com/MarkMakesStuff" target="_blank" rel="noreferrer noopener"><img id="footer-logo" className="responsive" src="/img/twitter-white.svg" alt="@MarkMakesStuff" style={{width:40,height:"auto", marginTop:10}} /></a>
         </div>
         <div className="col-md-4 item-3">
-          <form action="https://formspree.io/arenz.mark@gmail.com" method="POST" data-form="" id="footer-contact">
+          <form action="https://formspree.io/f/mpzkbrvv" method="POST" data-form="" id="footer-contact">
           	<input type="hidden" name="_next" value="/contact-thank-you" />
           	<div className="form__field">
           		<input type="text" name="name" data-validate-name="" className="form-control my-1" placeholder="Name" aria-label="Name" required />
