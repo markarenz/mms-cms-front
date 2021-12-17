@@ -12,7 +12,8 @@ const Footer= (props)=>{
           <h2>Mark Arenz</h2>
           <a href="tel:+13174420631" className="tel">(317) 442-0631</a><br />
           <a href="mailto:arenz.mark@gmail.com">arenz.mark@gmail.com</a><br />
-          <a href="https://twitter.com/MarkMakesStuff" target="_blank" rel="noreferrer noopener"><img id="footer-logo" className="responsive" src="/img/twitter-white.svg" alt="@MarkMakesStuff" style={{width:40,height:"auto", marginTop:10}} /></a>
+          <a href="https://twitter.com/MarkMakesStuff" target="_blank" rel="noreferrer noopener"><img id="footer-twitter" className="responsive" src="/img/twitter-white.svg" alt="@MarkMakesStuff" style={{width:40,height:"auto", marginTop:10}} /></a>
+          <a href="https://www.youtube.com/channel/UC1jRlDumEbeNxR6l-Icpihw" target="_blank" rel="noreferrer noopener"><img id="footer-yt" className="responsive" src="/img/yt-white.svg" alt="@MarkMakesStuff" style={{width:40,height:"auto", marginTop:10, marginLeft: 20}} /></a>
         </div>
         <div className="col-md-4 item-3">
           <form action="https://formspree.io/f/mpzkbrvv" method="POST" data-form="" id="footer-contact">
