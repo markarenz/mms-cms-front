@@ -4,14 +4,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
 import ScrollToTop from "./components/ScrollToTop";
-import Analytics from 'react-router-ga';
 
 ReactDOM.render(
   <BrowserRouter>
-    <Analytics id="UA-46308884-1" debug>
-      <ScrollToTop />
-      <App />
-    </Analytics>
+    <ScrollToTop />
+    <App />
   </BrowserRouter>
   , document.getElementById('root'));
 
