@@ -101,7 +101,6 @@ class PageBuilderPage extends React.Component{
         title={page.title}
         description={page.metadesc}
         image="og_img__home.jpg"
-        //       2019-03-05 01:41:47
         pubDate={page.updated_at.split(' ').join('T') + '+01:00'}
       />
     : null

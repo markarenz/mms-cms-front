@@ -2,15 +2,15 @@ import React from "react"
 import PageHeader from "./blocks/PageHeader"
 import { useParams } from "react-router-dom";
 import HelmetComp from "./HelmetComp"
-const _ = require('lodash')
+const { find } = require('lodash')
+
 // const posts = require('../json/mms-posts--production.json')
 
 const PostDetail = (props)=>{
   const [modalActive, setModalActive] = React.useState(false);
   const [modalImg, setModalImg] = React.useState('');
-  let helmetDisp='';
   const { slug } = useParams();
-  const post = _.find(props.posts, {slug})
+  const post = find(props.posts, {slug})
   const photo = "posts/" + post.id + '.jpeg'
   const block={
     id: 'post-header',
@@ -33,17 +33,19 @@ const PostDetail = (props)=>{
   }
   const modalContent = (modalImg) ? <img alt="Lightbox" src={modalImg} onClick={dismissModal}/> : null
   const lightBoxClass = (modalActive) ? "active" : null
-  helmetDisp = (post.title) ?
-    <HelmetComp
-      title={post.title}
-      description={post.metadesc}
-      image="og_img__home.jpg"
-      pubDate={post.updated_at.split(' ').join('T') + '+01:00'}
-    />
-  : null
+
   return(
     <div id="page">
-      { helmetDisp }
+      {
+        post.title && (
+          <HelmetComp
+            title={post.title}
+            description={post.metadesc}
+            image={photo}
+            pubDate={post.updated_at.split(' ').join('T') + '+01:00'}
+          />
+        )
+      }
       <PageHeader block={block}/>
       <article id="post-content">
         <div className="row container-narrow">
