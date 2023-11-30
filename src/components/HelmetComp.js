@@ -6,7 +6,6 @@ const HelmetComp = (props) => {
   const thisUrl = window.location.href.toString()
   const imgUrl = `${baseUrl}/remote/images/${props.image || 'og_img__home.jpg'}`
 
-  // https://s3.amazonaws.com/www.markmakesstuff.com/remote/images/posts/48.jpeg
   return(
     <Helmet>
       <title>{props.title}</title>
